@@ -28,7 +28,7 @@ export default defineUserConfig({
     sidebar: {
       '/agent学习文档/': [
         {
-          text: '17 节课程',
+          text: '课程与实战',
           collapsible: false,
           children: [
             '/agent学习文档/',
@@ -49,6 +49,7 @@ export default defineUserConfig({
             '/agent学习文档/15-人类介入与审批点/',
             '/agent学习文档/16-长期记忆与外部记忆/',
             '/agent学习文档/17-最小可实现Agent总体设计/',
+            '/agent学习文档/18-小项目实战手册/',
           ],
         },
       ],

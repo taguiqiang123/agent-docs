@@ -2,7 +2,7 @@
 title: 第 17 课：最小可实现Agent总体设计
 article: true
 prev: /agent学习文档/16-长期记忆与外部记忆/
-next: false
+next: /agent学习文档/18-小项目实战手册/
 ---
 # 第 17 课：最小可实现 Agent 总体设计
 
