@@ -2,8 +2,12 @@ import { viteBundler } from '@vuepress/bundler-vite'
 import { defineUserConfig } from 'vuepress'
 import { hopeTheme } from 'vuepress-theme-hope'
 
+const repoName = process.env.GITHUB_REPOSITORY?.split('/')[1]
+const autoBase =
+  process.env.GITHUB_ACTIONS === 'true' && repoName ? `/${repoName}/` : '/'
+
 export default defineUserConfig({
-  base: process.env.VUEPRESS_BASE || '/',
+  base: process.env.VUEPRESS_BASE || autoBase,
   lang: 'zh-CN',
   title: 'Agent 学习文档',
   description: '17 节课系统学习 Coding Agent，从架构到落地实现',
